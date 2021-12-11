@@ -4,9 +4,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.documentElement.scrollTop > 70) {
-      var header = document.getElementById('header');
-      if(!header.classList.contains('navbar-fixed')){
-        header.classList.add('navbar-fixed');
+      var header = document.getElementById('head');
+      if(!header.classList.contains('navb-fixed')){
+        header.classList.add('navb-fixed');
         document.getElementsByTagName('body')[0].style.marginTop = '70px';
         header.style.display = 'none';
         setTimeout(function() {
@@ -14,19 +14,19 @@ function scrollFunction() {
         }, 40);
       }
     } else {
-      var header = document.getElementById('header');
-      if(header.classList.contains('navbar-fixed')){
-        header.classList.remove('navbar-fixed');
+      var header = document.getElementById('head');
+      if(header.classList.contains('navb-fixed')){
+        header.classList.remove('navb-fixed');
         document.getElementsByTagName('body')[0].style.marginTop = '0';
       }
     }
 }
 
 function menuToggle(){
-  document.getElementById('menu').classList.toggle('show');
+  document.getElementById('navbmenu').classList.toggle('show');
 }
 
-document.getElementById('toggleBtn').addEventListener('click', menuToggle);
+document.getElementById('navbtoggleBtn').addEventListener('click', menuToggle);
 
 /* WELCOME AREA */
 var imageSlideIndex = 1;
@@ -202,11 +202,11 @@ function moveTo(id) {
   } else {
     window.scrollTo(0, document.getElementById(id).offsetTop - 70);
   }
-  document.getElementById('menu').classList.remove('show');
+  document.getElementById('navbmenu').classList.remove('show');
 }
 
-document.getElementById('navbarBrand').addEventListener('click', moveTo.bind(null,'brand'));
-document.getElementById('navbarAbout').addEventListener('click', moveTo.bind(null,'about'));
-document.getElementById('navbarService').addEventListener('click', moveTo.bind(null,'service'));
-document.getElementById('navbarPortfolio').addEventListener('click', moveTo.bind(null,'portfolio'));
-document.getElementById('navbarReview').addEventListener('click', moveTo.bind(null,'review'));
+document.getElementById('navbBrand').addEventListener('click', moveTo.bind(null,'brand'));
+document.getElementById('navbAbout').addEventListener('click', moveTo.bind(null,'about'));
+document.getElementById('navbService').addEventListener('click', moveTo.bind(null,'service'));
+document.getElementById('navbPortfolio').addEventListener('click', moveTo.bind(null,'portfolio'));
+document.getElementById('navbReview').addEventListener('click', moveTo.bind(null,'review'));

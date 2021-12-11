@@ -29,7 +29,7 @@ ul {
 }
 
 /* HEADER */
-.header-area {
+.head-area {
     position: relative;
     top: 0;
     left: 0;
@@ -39,47 +39,47 @@ ul {
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 }
 
-.navbar-fade {
-    animation-name: navbar-fade;
+.navb-fade {
+    animation-name: navb-fade;
     animation-duration: 0.5s;
-    -webkit-animation-name: navbar-fade;
+    -webkit-animation-name: navb-fade;
     -webkit-animation-duration: 0.5s;
 }
 
-@keyframes navbar-fade {
+@keyframes navb-fade {
     from { opacity: .4}
     to { opacity: 1 }
 }
 
-@-webkit-keyframes navbar-fade {
+@-webkit-keyframes navb-fade {
     from { opacity: .4}
     to { opacity: 1 }
 }
 
-.header-area.navbar-fixed {
+.head-area.navb-fixed {
     position: fixed;
 }
 
-.header-area > .navbar {
+.head-area > .navb {
     width: calc(100% - 120px);
     margin: 0 60px;
     overflow: hidden;
 }
 
 @media (min-width: 992px) {
-    .header-area > .navbar {
+    .head-area > .navb {
         max-width: 900px;
         margin: 0 auto;
     }
 }
 
 @media (min-width: 1200px) {
-    .header-area > .navbar {
+    .head-area > .navb {
         max-width: 1000px;
     }    
 }
 
-.header-area > .navbar > .navbar-brand {
+.head-area > .navb > .navb-brand {
     display: inline-block;
     position: absolute;
     top: 50%;
@@ -88,11 +88,11 @@ ul {
     cursor: pointer;
 }
 
-.header-area > .navbar > .navbar-toggler * {
+.head-area > .navb > .navb-toggler * {
     font-size: 32px;
 }
 
-.header-area > .navbar > .navbar-toggler {
+.head-area > .navb > .navb-toggler {
     float: right;
     height: 70px;
     line-height: 70px;
@@ -101,12 +101,12 @@ ul {
 }
 
 @media(min-width: 992px) {
-    .header-area > .navbar > .navbar-toggler {
+    .head-area > .navb > .navb-toggler {
         display: none;
     }
 }
 
-.header-area > .navbar > .navbar-menu {
+.head-area > .navb > .navb-menu {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     top: 70px;
@@ -117,22 +117,22 @@ ul {
     overflow: hidden;
 }
 
-.header-area > .navbar > .navbar-menu.show {
+.head-area > .navb > .navb-menu.show {
     height: 200px;
 }
 
-.header-area > .navbar > .navbar-menu > .nav-item {
+.head-area > .navb > .navb-menu > .nav-item {
     float: none;
     display: block;
     height: 50px;
     line-height: 50px;
 }
 
-.header-area > .navbar > .navbar-menu > .nav-item:hover * {
+.head-area > .navb > .navb-menu > .nav-item:hover * {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.header-area > .navbar > .navbar-menu > .nav-item > .nav-link {
+.head-area > .navb > .navb-menu > .nav-item > .nav-link {
     display: block;
     padding-left: 50px;
     color: white;
@@ -140,7 +140,7 @@ ul {
 }
 
 @media (min-width: 992px) {
-    .header-area > .navbar > .navbar-menu {
+    .head-area > .navb > .navb-menu {
         position: relative;
         background-color: transparent;
         float: right;
@@ -150,21 +150,21 @@ ul {
         transition: none;
     }
 
-    .header-area > .navbar > .navbar-menu.show {
+    .head-area > .navb > .navb-menu.show {
         height: auto;
     }
 
-    .header-area > .navbar > .navbar-menu > .nav-item {
+    .head-area > .navb > .navb-menu > .nav-item {
         display: inline-block;
         height: 70px;
         line-height: 70px;
     }
 
-    .header-area > .navbar > .navbar-menu > .nav-item:hover * {
+    .head-area > .navb > .navb-menu > .nav-item:hover * {
         background-color: transparent;
     }
 
-    .header-area > .navbar > .navbar-menu > .nav-item > .nav-link {
+    .head-area > .navb > .navb-menu > .nav-item > .nav-link {
         display: block;
         padding: 0 20px;
         color: black;
