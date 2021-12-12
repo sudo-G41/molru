@@ -1,3 +1,6 @@
 function startGame(){
-  location.href=gameMain.html;
+  location.href="/game/gameMain.html";
+}
+function goMain(){
+  location.href="index.html";
 }
